@@ -50,7 +50,7 @@
   </dependencies>
   <build>
     <sourceDirectory>src/</sourceDirectory>
-   <finalName>JavaRandomNumGenApp</finalName>
+   <finalName>${appname}</finalName>
     <resources>
       <resource>
         <directory>${basedir}</directory>
