@@ -4,7 +4,7 @@
   <groupId>Java_App1</groupId>
   <artifactId>Model</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <description>Generated POM from JDeveloper for project Model.</description>
+  <description>Generated POM from JDeveloper for project Model...</description>
   <dependencies>
     <!--dependency>
       <groupId>com.oracle.adf.library</groupId>
