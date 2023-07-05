@@ -17,6 +17,7 @@ steps:
 - script: |
     echo Add other tasks to build, test, and deploy your project.
   displayName: 'Run a multi-line script'
+
 - task: Maven@4
   inputs:
     mavenPomFile: 'JAVAApplicationDeploy/pom.xml'
@@ -26,4 +27,5 @@ steps:
     mavenAuthenticateFeed: false
     effectivePomSkip: false
     sonarQubeRunAnalysis: false
+
 
