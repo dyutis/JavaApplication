@@ -6,7 +6,7 @@
 # https://aka.ms/yaml
 
 trigger:
-- main
+- $(branchName)
 
 pool:
   vmImage: ubuntu-latest
@@ -28,9 +28,15 @@ steps:
     mavenAuthenticateFeed: false
     effectivePomSkip: false
     sonarQubeRunAnalysis: false
-- task: DownloadPipelineArtifact@2
+
+
+- task: UniversalPackages@0
   inputs:
-    buildType: 'current'
-    targetPath: '$(Pipeline.Workspace)'
-
-
+    command: 'publish'
+    publishDirectory: '$(System.DefaultWorkingDirectory)'
+    feedsToUsePublish: 'internal'
+    vstsFeedPublish: 'AzDOTestPrj/DODSFeed-Project'
+    vstsFeedPackagePublish: 'test-dods-pkg'
+    versionOption: 'custom'
+    versionPublish: $(packageVersion)
+    packagePublishDescription: 'pub'
