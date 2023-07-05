@@ -9,6 +9,8 @@
   <serverURL>${env.adminurl}</serverURL>
   <user>${env.weblogicuname}</user>
   <password>${env.weblogicpwd}</password>
+  <maven.compiler.source>1.8</maven.compiler.source>
+  <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
   <build>
     <resources>
