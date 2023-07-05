@@ -33,7 +33,7 @@ steps:
 - task: UniversalPackages@0
   inputs:
     command: 'publish'
-    publishDirectory: '$(System.DefaultWorkingDirectory)'
+    publishDirectory: '$(System.DefaultWorkingDirectory)/JAVAApplicationDeploy/ViewController/target/JavaRandomNumGenApp.war'
     feedsToUsePublish: 'internal'
     vstsFeedPublish: 'AzDOTestPrj/DODSFeed-Project'
     vstsFeedPackagePublish: 'test-dods-pkg'
