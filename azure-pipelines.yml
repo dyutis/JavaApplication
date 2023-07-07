@@ -36,7 +36,7 @@ steps:
     publishDirectory: '$(System.DefaultWorkingDirectory)/JAVAApplicationDeploy/ViewController/target/JavaRandomNumGenApp.war'
     feedsToUsePublish: 'internal'
     vstsFeedPublish: 'AzDOTestPrj/DODSFeed-Project'
-    vstsFeedPackagePublish: 'test-dods-pkg'
+    vstsFeedPackagePublish: $(packageName)
     versionOption: 'custom'
     versionPublish: $(packageVersion)
     packagePublishDescription: 'pub'
