@@ -6,7 +6,7 @@
 # https://aka.ms/yaml
 
 trigger:
-- $(branchName)
+- main
 
 pool:
   vmImage: ubuntu-latest
