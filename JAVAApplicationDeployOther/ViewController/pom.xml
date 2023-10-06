@@ -50,7 +50,6 @@
   </dependencies>
   <build>
     <sourceDirectory>src/</sourceDirectory>
-   <finalName>${appname}</finalName>
     <resources>
       <resource>
         <directory>${basedir}</directory>
