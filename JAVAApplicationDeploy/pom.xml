@@ -24,7 +24,7 @@
     <module>Model</module>
     <module>ViewController</module>
   </modules>
-  <!--<dependencies>
+  <!-- <dependencies>
     <dependency>
       <groupId>Java_App1</groupId>
       <artifactId>Model</artifactId>
