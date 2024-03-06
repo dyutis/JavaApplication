@@ -29,7 +29,7 @@
   <!--<dependencies>
     <dependency>
       <groupId>Java_App1</groupId>
-      <artifactId>Model</artifactId>
+      <artifactId>Model</artifactId >
       <version>1.0-SNAPSHOT</version>
       <type>jar</type>
     </dependency>
