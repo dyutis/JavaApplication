@@ -37,6 +37,31 @@
         </includes>
       </resource>
     </resources>
-    <outputDirectory>classes/</outputDirectory>       
+    <outputDirectory>classes/</outputDirectory>    
+    <plugins>
+            <!-- Code Coverage report generation -->
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>0.7.9</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+            <id>report-aggregate</id>
+            <phase>verify</phase>
+            <goals>
+              <goal>report-aggregate</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>${project.basedir}/../target/site/jacoco-aggregate</outputDirectory>
+            </configuration>
+          </execution>
+                </executions>
+            </plugin>
+        </plugins>
   </build>
 </project>
