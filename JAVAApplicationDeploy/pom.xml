@@ -9,6 +9,11 @@
   <serverURL>${env.adminurl}</serverURL>
   <user>${env.weblogicuname}</user>
   <password>${env.weblogicpwd}</password>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.build.timestamp.format>yyyy.MM.dd.HHmmss</maven.build.timestamp.format>
+    <maven.compiler.test.source>8</maven.compiler.test.source>
+    <maven.compiler.test.target>8</maven.compiler.test.target>
+    <java.version>6</java.version>
      <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
     <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
     <sonar.coverage.jacoco.xmlReportPaths>${project.basedir}/../target/site/jacoco-aggregate/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
