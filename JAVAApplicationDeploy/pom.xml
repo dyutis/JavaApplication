@@ -9,6 +9,11 @@
   <serverURL>${env.adminurl}</serverURL>
   <user>${env.weblogicuname}</user>
   <password>${env.weblogicpwd}</password>
+     <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
+    <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
+    <sonar.coverage.jacoco.xmlReportPaths>${project.basedir}/../target/site/jacoco-aggregate/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
+    <sonar.language>java</sonar.language>
+    <sonar.host.url>http://mysqllt01.flexagon:9000</sonar.host.url>
   </properties>
   <build>
     <resources>
@@ -44,6 +49,11 @@
                 </executions>
             </plugin>
         </plugins>
+     <plugin>
+        <groupId>org.sonarsource.scanner.maven</groupId>
+        <artifactId>sonar-maven-plugin</artifactId>
+        <version>3.9.0.2155</version>
+      </plugin>
   </build>
   <modules>
     <module>Model</module>
